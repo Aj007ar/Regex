@@ -10,7 +10,7 @@ namespace RegexProblems
     {
         public void choose()
         {
-            Console.WriteLine("\n1.Check First Name Valid or Not");
+            Console.WriteLine("\n1.Check First Name Valid or Not\n2.Check Last Name Valid or Not");
             Console.WriteLine("0. Exit");
             Console.WriteLine("Choose your choice");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -18,10 +18,18 @@ namespace RegexProblems
             {
                 case 1:
                     Console.WriteLine("\n-----------------------> Validate First Name <-----------------------------");
-                    ValidFirstName firstName = new ValidFirstName();
+                    ValidateUser firstName = new ValidateUser();
                     Console.WriteLine("Enter First Name");
                     string fName = Convert.ToString(Console.ReadLine());
                     firstName.ValidateFirstName(fName);
+                    choose();
+                    break;
+                case 2:
+                    Console.WriteLine("\n-----------------------> Validate Last Name <-----------------------------");
+                    ValidateUser lastName = new ValidateUser();
+                    Console.WriteLine("Enter Last Name");
+                    string lName = Convert.ToString(Console.ReadLine());
+                    lastName.ValidateLastName(lName);
                     choose();
                     break;
                 case 0:
