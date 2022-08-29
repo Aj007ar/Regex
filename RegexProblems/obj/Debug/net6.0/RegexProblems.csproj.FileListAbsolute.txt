@@ -1,0 +1,15 @@
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\bin\Debug\net6.0\RegexProblems.exe
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\bin\Debug\net6.0\RegexProblems.deps.json
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\bin\Debug\net6.0\RegexProblems.runtimeconfig.json
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\bin\Debug\net6.0\RegexProblems.dll
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\bin\Debug\net6.0\RegexProblems.pdb
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\RegexProblems.csproj.AssemblyReference.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\RegexProblems.GeneratedMSBuildEditorConfig.editorconfig
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\RegexProblems.AssemblyInfoInputs.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\RegexProblems.AssemblyInfo.cs
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\RegexProblems.csproj.CoreCompileInputs.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\RegexProblems.dll
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\refint\RegexProblems.dll
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\RegexProblems.pdb
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\RegexProblems.genruntimeconfig.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexProblems\obj\Debug\net6.0\ref\RegexProblems.dll
