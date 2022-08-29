@@ -10,7 +10,7 @@ namespace RegexProblems
     {
         public void choose()
         {
-            Console.WriteLine("\n1.Check First Name Valid or Not\n2.Check Last Name Valid or Not\n3.Check Email Valid or Not");
+            Console.WriteLine("\n1.Check First Name Valid or Not\n2.Check Last Name Valid or Not\n3.Check Email Valid or Not\n4.Check Mobile Number valid or Not");
             Console.WriteLine("0. Exit");
             Console.WriteLine("Choose your choice");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -38,6 +38,14 @@ namespace RegexProblems
                     Console.WriteLine("Enter Email Id");
                     string mail = Convert.ToString(Console.ReadLine());
                     email.ValidateEmailId(mail);
+                    choose();
+                    break;
+                case 4:
+                    Console.WriteLine("\n-----------------------> Validate Mobile Number <-----------------------------");
+                    ValidateUser mobile = new ValidateUser();
+                    Console.WriteLine("Enter Mobile Number");
+                    string mobileNum = Convert.ToString(Console.ReadLine());
+                    mobile.ValidateMobileNumber(mobileNum);
                     choose();
                     break;
                 case 0:

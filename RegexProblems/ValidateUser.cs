@@ -12,7 +12,7 @@ namespace RegexProblems
         public Regex FirstNameregex = new Regex(@"^[A-Z]{1}[A-Z a-z]{3,}$");
         public Regex LastNameregex = new Regex(@"^[A-Z]{1}[A-Z a-z]{3,}$");
         public Regex EmailIdRegex = new Regex(@"^[a-z]+([.+-_][a-z]+)*@[a-z]+.[a-z]+([.]+[a-z]+)*$");
-
+        public Regex MobileNumberRegex = new Regex(@"^[0-9]{2}\s[0-9]{10}$");
         public void ValidateFirstName(string FirstName)
         {
             Console.WriteLine("\nFirst Name "+ FirstName);
@@ -47,6 +47,18 @@ namespace RegexProblems
             else
             {
                 Console.WriteLine("Invalid Email Id");
+            }
+        }
+        public void ValidateMobileNumber(string MobileNum)
+        {
+            Console.WriteLine("\nMobile Number " + MobileNum);
+            if (MobileNumberRegex.IsMatch(MobileNum))
+            {
+                Console.WriteLine("Valid Mobile Number");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Mobile Number");
             }
         }
     }
