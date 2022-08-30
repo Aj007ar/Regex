@@ -48,6 +48,14 @@ namespace RegexProblems
                     mobile.ValidateMobileNumber(mobileNum);
                     choose();
                     break;
+                case 5:
+                    Console.WriteLine("\n-----------------------> Validate Password Rule 1 <-----------------------------");
+                    ValidateUser Pass1 = new ValidateUser();
+                    Console.WriteLine("Enter Password");
+                    string pass = Convert.ToString(Console.ReadLine());
+                    Pass1.ValidatePassRule_1(pass);
+                    choose();
+                    break;
                 case 0:
                     break;
             }
