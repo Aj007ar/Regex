@@ -14,7 +14,9 @@ namespace RegexProblems
         public Regex EmailIdRegex = new Regex(@"^[a-z]+([.+-_][a-z]+)*@[a-z]+.[a-z]+([.]+[a-z]+)*$");
         public Regex MobileNumberRegex = new Regex(@"^[0-9]{2}\s[0-9]{10}$");
         public Regex PassRule_1Regex=new Regex(@"^([A-Z a-z 0-9 !@#$&]){8,}$");
-        public Regex PassRule_2Regex = new Regex(@"^(=?.*[A-Z])+([A-Z a-z 0-9 !@#$&]).{8,}$");
+        public Regex PassRule_2Regex = new Regex("^(?=.*?[A-Z]).{8,}$");
+        public Regex PassRule_3Regex = new Regex("^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$");
+
         public void ValidateFirstName(string FirstName)
         {
             Console.WriteLine("\nFirst Name "+ FirstName); 
@@ -85,6 +87,18 @@ namespace RegexProblems
             else
             {
                 Console.WriteLine("Invalid password rule 2");
+            }
+        }
+        public void ValidatePassRule_3(string PassRule_3)
+        {
+            Console.WriteLine("\nPassword " + PassRule_3);
+            if (PassRule_3Regex.IsMatch(PassRule_3))
+            {
+                Console.WriteLine("Valid for Password Rule 3");
+            }
+            else
+            {
+                Console.WriteLine("Invalid password rule 3");
             }
         }
     }
