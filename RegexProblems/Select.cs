@@ -11,7 +11,7 @@ namespace RegexProblems
         public void choose()
         {
             Console.WriteLine("\n1.Check First Name Valid or Not\n2.Check Last Name Valid or Not\n3.Check Email Valid or Not\n4.Check Mobile Number valid or Not");
-            Console.WriteLine("5.Check Password Atleast 8 Charecter\n6.Check Password atleast 1 UpperCase\n7.Check Password Atleast 1 numaric");
+            Console.WriteLine("5.Check Password Atleast 8 Charecter\n6.Check Password atleast 1 UpperCase\n7.Check Password Atleast 1 numaric\n8.Check Password atleast 1 Special Charecter");
             Console.WriteLine("0. Exit");
             Console.WriteLine("Choose your choice");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -71,6 +71,14 @@ namespace RegexProblems
                     Console.WriteLine("Enter Password");
                     string paSS = Convert.ToString(Console.ReadLine());
                     Pass3.ValidatePassRule_3(paSS);
+                    choose();
+                    break;
+                case 8:
+                    Console.WriteLine("\n-----------------------> Validate Password Rule 4 <-----------------------------");
+                    ValidateUser Pass4 = new ValidateUser();
+                    Console.WriteLine("Enter Password");
+                    string PaSS = Convert.ToString(Console.ReadLine());
+                    Pass4.ValidatePassRule_4(PaSS);
                     choose();
                     break;
                 case 0:
