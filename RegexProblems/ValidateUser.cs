@@ -17,7 +17,7 @@ namespace RegexProblems
         public Regex PassRule_2Regex = new Regex("^(?=.*?[A-Z]).{8,}$");
         public Regex PassRule_3Regex = new Regex("^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$");
         public Regex PassRule_4Regex = new Regex("^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*()_+=-]).{8,}$");
-
+        public Regex SampleEmailRegex=new Regex("^[A-Z a-z 0-9 +_.-]+@[A-z a-z 0-9 .-]+$");
 
         public void ValidateFirstName(string FirstName)
         {
@@ -113,6 +113,18 @@ namespace RegexProblems
             else
             {
                 Console.WriteLine("Invalid password rule 4");
+            }
+        }
+        public void ValidateSampleEmails(string SampEmail)
+        {
+            Console.WriteLine("\nPassword " + SampEmail);
+            if (SampleEmailRegex.IsMatch(SampEmail))
+            {
+                Console.WriteLine("Valid for Sample Emails");
+            }
+            else
+            {
+                Console.WriteLine("Invalid for sample emails");
             }
         }
     }

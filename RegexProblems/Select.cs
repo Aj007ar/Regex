@@ -12,7 +12,7 @@ namespace RegexProblems
         {
             Console.WriteLine("\n1.Check First Name Valid or Not\n2.Check Last Name Valid or Not\n3.Check Email Valid or Not\n4.Check Mobile Number valid or Not");
             Console.WriteLine("5.Check Password Atleast 8 Charecter\n6.Check Password atleast 1 UpperCase\n7.Check Password Atleast 1 numaric\n8.Check Password atleast 1 Special Charecter");
-            Console.WriteLine("0. Exit");
+            Console.WriteLine("9.Check for Sample Emails\n0. Exit");
             Console.WriteLine("Choose your choice");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -79,6 +79,16 @@ namespace RegexProblems
                     Console.WriteLine("Enter Password");
                     string PaSS = Convert.ToString(Console.ReadLine());
                     Pass4.ValidatePassRule_4(PaSS);
+                    choose();
+                    break;
+                case 9:
+                    Console.WriteLine("\n-----------------------> Validate Sample Emails <-----------------------------");
+                    ValidateUser emails = new ValidateUser();
+                    string[] Emails = { "abc@yahoo.com", "abc-100@yahho.com", "abc.100@yahoo.com", "abc111@abc.com", "abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc+100@gmail.com" };
+                    foreach (var s in Emails)
+                    {
+                        emails.ValidateSampleEmails(s);
+                    }
                     choose();
                     break;
                 case 0:
