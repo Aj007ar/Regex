@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace RegexProblems
 {
-    internal class ValidateUser
+    public class ValidateUser
     {
         public Regex FirstNameregex = new Regex(@"^[A-Z]{1}[A-Z a-z]{3,}$");
         public Regex LastNameregex = new Regex(@"^[A-Z]{1}[A-Z a-z]{3,}$");
@@ -19,7 +19,7 @@ namespace RegexProblems
         public Regex PassRule_4Regex = new Regex("^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*()_+=-]).{8,}$");
         public Regex SampleEmailRegex=new Regex("^[A-Z a-z 0-9 +_.-]+@[A-z a-z 0-9 .-]+$");
 
-        public void ValidateFirstName(string FirstName)
+        public string ValidateFirstName(string FirstName)
         {
             Console.WriteLine("\nFirst Name "+ FirstName); 
             if (FirstNameregex.IsMatch(FirstName))
@@ -30,6 +30,7 @@ namespace RegexProblems
             {
                 Console.WriteLine("Invalid First Name");
             }
+            return FirstName;
         }
         public void ValidateLastName(string LastName)
         {
@@ -43,7 +44,7 @@ namespace RegexProblems
                 Console.WriteLine("Invalid Last Name");
             }
         }
-        public void ValidateEmailId(string EmailId)
+        public string ValidateEmailId(string EmailId)
         {
             Console.WriteLine("\nEmail Id " + EmailId);
             if (EmailIdRegex.IsMatch(EmailId))
@@ -54,8 +55,9 @@ namespace RegexProblems
             {
                 Console.WriteLine("Invalid Email Id");
             }
+            return EmailId;
         }
-        public void ValidateMobileNumber(string MobileNum)
+        public string ValidateMobileNumber(string MobileNum)
         {
             Console.WriteLine("\nMobile Number " + MobileNum);
             if (MobileNumberRegex.IsMatch(MobileNum))
@@ -66,6 +68,7 @@ namespace RegexProblems
             {
                 Console.WriteLine("Invalid Mobile Number");
             }
+            return MobileNum;
         }
         public void ValidatePassRule_1(string PassRule_1)
         {
