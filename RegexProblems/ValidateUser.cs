@@ -18,6 +18,15 @@ namespace RegexProblems
         public Regex PassRule_3Regex = new Regex("^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$");
         public Regex PassRule_4Regex = new Regex("^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*()_+=-]).{8,}$");
         public Regex SampleEmailRegex=new Regex("^[A-Z a-z 0-9 +_.-]+@[A-z a-z 0-9 .-]+$");
+        string message;
+        public ValidateUser()
+        {
+
+        }
+        public ValidateUser(string message)
+        {
+            this.message = message;
+        }
 
         public string ValidateFirstName(string FirstName)
         {

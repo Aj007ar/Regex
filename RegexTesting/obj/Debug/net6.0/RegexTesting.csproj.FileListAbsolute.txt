@@ -1,4 +1,9 @@
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.csproj.AssemblyReference.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.GeneratedMSBuildEditorConfig.editorconfig
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.AssemblyInfoInputs.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.AssemblyInfo.cs
+D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.csproj.CoreCompileInputs.cache
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\bin\Debug\net6.0\testhost.dll
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\bin\Debug\net6.0\RegexProblems.deps.json
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\bin\Debug\net6.0\RegexProblems.runtimeconfig.json
@@ -92,11 +97,6 @@ D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\bin\Debug\net6.
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\bin\Debug\net6.0\RegexProblems.dll
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\bin\Debug\net6.0\RegexProblems.pdb
-D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.csproj.AssemblyReference.cache
-D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.GeneratedMSBuildEditorConfig.editorconfig
-D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.AssemblyInfoInputs.cache
-D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.AssemblyInfo.cs
-D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.csproj.CoreCompileInputs.cache
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.csproj.CopyComplete
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\RegexTesting.dll
 D:\BL\LinuxBatch-560\LFP-183-DotNet\UserRegex\Regex\RegexTesting\obj\Debug\net6.0\refint\RegexTesting.dll

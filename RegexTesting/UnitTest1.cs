@@ -8,7 +8,7 @@ namespace RegexTesting
         [Test]
         public void TestMethodforValidFirstName()
         {
-            string expected = "Valid";
+            string expected = "Ajay";
             string actual = validateUser.ValidateFirstName("Ajay");
             Assert.AreEqual(expected, actual);
 
@@ -17,9 +17,15 @@ namespace RegexTesting
         [Test]
         public void TestMethodforInValidFirstName()
         {
-            string expected = "Invalid";
-            string actual = validateUser.ValidateFirstName("Aj");
-            Assert.AreEqual(expected, actual);
+            try
+            {
+                validateUser.ValidateFirstName("Aj");
+            }
+            catch (RegexCustomException ex)
+            {
+                string expected = "InValid";
+                Assert.AreEqual(expected, ex.Message);
+            }
 
         }
         //Test for last name
@@ -70,7 +76,7 @@ namespace RegexTesting
         public void TestMethodforValidPhoneNumber()
         {
             string actual = validateUser.ValidateMobileNumber("91 7620093382");
-            string expected = "Valid";
+            string expected = "91 7620093382";
             Assert.AreEqual(actual, expected);
 
         }
@@ -101,7 +107,7 @@ namespace RegexTesting
             }
             catch (RegexCustomException ex)
             {
-                string expected = "Null";
+                string expected = "null";
                 Assert.AreEqual(expected, ex.Message);
             }
 
@@ -125,8 +131,8 @@ namespace RegexTesting
         [Test]
         public void TestEmail()
         {
-            string actual = validateUser.ValidateEmailId("abc.@gmail.com");
-            string expected = "Valid";
+            string actual = validateUser.ValidateEmailId("abc@gmail.com");
+            string expected = "abc@gmail.com";
             Assert.AreEqual(actual, expected);
 
         }
@@ -157,6 +163,22 @@ namespace RegexTesting
                 string expected = "Invalid Password";
                 Assert.AreEqual(expected, ex.Message);
             }
+        }
+        //Test For Object Reflection 
+        [Test]
+        public void CreateObjectWithReflection()
+        {
+            object expected = new ValidateUser();
+            object actual = RegexFactory.CreateObjectForUserDetails("RegexProblems.ValidateUser", "ValidateUser");
+            actual.Equals(expected);
+        }
+        //Test for Parameterized Constructor
+        [Test]
+        public void CreateParameterizedConstructor()
+        {
+            object expected = new ValidateUser("Regex");
+            object actual = RegexFactory.CreateObjectForUserDetails("RegexProblems.ValidateUser", "ValidateUser");
+            actual.Equals(expected);
         }
     }
 }
